@@ -1,0 +1,42 @@
+.Heading-col-1-os p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16.1661px;
+    line-height: 20px;
+    color: #2F3039;
+}
+.Heading-col-1-os h2 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24.837px;
+    line-height: 30px;
+    color: #2F3039;
+    padding-bottom: 4px;
+}
+.Heading-col-2-os button {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13.8125px;
+    line-height: 23px;
+    color: #532E16;
+    background: #FFFFFF;
+    border: 2.30208px solid #532E16;
+    box-shadow: 4.60416px 4.60416px 23.0208px 3.45312px rgba(0, 0, 0, 0.02);
+    border-radius: 9.20833px;
+    padding: 8px 1rem;
+    cursor: pointer;
+}
+.Heading-row-os {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.Heading-col-2-os {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}

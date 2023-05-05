@@ -1,0 +1,43 @@
+.ProductsPagination-row-os {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 1rem 2rem;
+    background: #FAFAFA;
+}
+.ProductsPagination-row-os button {
+    padding: 0.5rem;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFFFFF;
+    border: 0.56962px solid #946327;
+    border-radius: 4px;
+}
+.ProductsPagination-row-os button span {
+    display: flex;
+    height: 12px;
+    width: 12px;
+    border-left: 2px solid #8E4B0C;
+    border-top: 2px solid #8E4B0C;
+}
+.ProductsPagination-prevBtn-os {
+    transform: rotate(-45deg);
+}
+.ProductsPagination-nextBtn-os {
+    transform: rotate(135deg);
+}
+.ProductsPagination-col-2-os {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.page-link.active {
+    background: #946327;
+    border: 0.56962px solid #946327;
+    border-radius: 2.27848px;
+    color: #fff;
+}

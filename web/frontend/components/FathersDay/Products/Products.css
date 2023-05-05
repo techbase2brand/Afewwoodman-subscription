@@ -1,0 +1,18 @@
+.ProductsTable-heading-row-os {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+    padding-bottom: 2.5rem;
+}
+.ProductsTable-heading-row-os h3, .ProductsTable-heading-row-os h2 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #2F3039;
+}
+.ProductsTable-heading-row-os h2 {
+    cursor: pointer;
+}

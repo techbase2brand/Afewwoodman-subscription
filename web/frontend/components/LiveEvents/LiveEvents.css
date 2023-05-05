@@ -1,0 +1,28 @@
+.LiveEvents-online-offline-tabs-row-os button {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16.1661px;
+    line-height: 20px;
+    color: #2F3039;
+    border: none;
+    padding: 0.8rem 2rem;
+    background: #fff;
+    cursor: pointer;
+}
+.LiveEvents-online-offline-tabs-row-os {
+    background: #FFFFFF;
+    border: 1px solid #DCDCDC;
+    border-radius: 7px;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+.LiveEvents-online-offline-tabs-row-os button.active {
+    color: #452A19;
+    background: #F6F8FA;
+    border: 1px solid #ECD188;
+    border-radius: 5px;
+}

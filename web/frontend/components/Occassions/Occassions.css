@@ -1,0 +1,26 @@
+.Occassions-card-row-os>a {
+    width: 23.5%;
+}
+.Occassions-card-row-os {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem 2%;
+}
+.Occassions-heading-os {
+    padding-bottom: 3rem;
+}
+.Occassions-page-os {
+    position: relative;
+}
+
+@media screen and (max-width:1199px) {
+    .Occassions-card-row-os>a {
+        width: 32%;
+    }    
+}
+@media screen and (max-width:991px) {
+    .Occassions-card-row-os>a {
+        width: 49%;
+    }    
+}

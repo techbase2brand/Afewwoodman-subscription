@@ -1,0 +1,73 @@
+/* Table Style starts */
+
+.ProductsTable-section-os .table-wrapper {
+    /* padding-top: 2rem; */
+    /* box-shadow: 0px 35px 50px rgba(0, 0, 0, 0.2); */
+}
+
+.ProductsTable-section-os .fl-table {
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: normal;
+    border: none;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+    white-space: nowrap;
+    background-color: white;
+}
+
+.ProductsTable-section-os .fl-table td, .fl-table th {
+    text-align: center;
+    padding: 1.5rem 2rem;
+}
+
+.ProductsTable-section-os .fl-table td {
+    border-bottom: 1px solid #E9E9F2;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 21px;
+    color: #532E16;
+}
+
+.ProductsTable-section-os .fl-table thead th {
+    background: #FFF6DE;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 21px;
+    color: #532E16;
+}
+
+.ProductsTable-section-os .fl-table thead th:nth-child(odd) {
+    /* color: #ffffff;
+    background: #324960; */
+}
+
+.ProductsTable-section-os .fl-table tr:nth-child(even) {
+    /* background: #f8f8f8; */
+}
+.ProductsTable-section-os .fl-table tr:last-child td {
+    border: none;
+}
+/* Table Style ends */
+
+.ProductsTable-dots-os {
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    cursor: pointer;
+}
+.ProductsTable-dots-os span {
+    display: flex;
+    width: 4px;
+    height: 4px;
+    background: #532E16;
+    margin: 2px auto;
+    border-radius: 12px;
+}

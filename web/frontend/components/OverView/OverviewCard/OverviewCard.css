@@ -1,0 +1,45 @@
+.OverviewCard-col-os h1 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 27.625px;
+    line-height: 26px;
+    color: #8E4B0C;
+}
+.OverviewCard-col-os p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16.1146px;
+    line-height: 15px;
+    color: #585858;
+    padding-bottom: 1rem;
+}
+.OverviewCard-col-os {
+    width: 22%;
+    padding: 2rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 180px;
+}
+.OverviewCard-col-1-os {
+    background-image: url('../../Assets/overview-card-img1.png');
+}
+.OverviewCard-col-2-os {
+    background-image: url('../../Assets/overview-card-img2.png');
+}
+.OverviewCard-col-3-os {
+    background-image: url('../../Assets/overview-card-img3.png');
+}
+.OverviewCard-col-4-os {
+    background-image: url('../../Assets/overview-card-img4.png');
+}
+.OverviewCard-row-os {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4%;
+}
+.OverviewCard-section-os {
+    padding-bottom: 2.5rem;
+}

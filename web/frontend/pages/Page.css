@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+input:focus-visible {
+    outline: none;
+}
+
+.app-left-navbar-os {
+    width: 10%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    height: 100%;
+}
+.app-right-content-os {
+    width: 90%;
+    margin-left: auto;
+    padding: 1rem;
+}
+.all-app-content-os {
+    display: flex;
+    flex-wrap: wrap;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+@media screen and (max-width: 1600px) {
+    .app-left-navbar-os {
+        width: 15%;
+    }
+    .app-right-content-os {
+        width: 85%;
+    }
+    
+}
+@media screen and (max-width: 991px) {
+    .app-left-navbar-os {
+        width: 25%;
+    }
+    .app-right-content-os {
+        width: 75%;
+    }
+    
+}

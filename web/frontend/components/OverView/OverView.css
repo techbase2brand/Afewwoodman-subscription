@@ -1,0 +1,19 @@
+.OverView-heading-os {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 1.5rem;
+}
+.app-right-content-os-1 {
+    padding: 2rem;
+    background: #F6F8FA;
+}
+.OverView-heading-os h1 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 27.625px;
+    line-height: 21px;
+    color: #000000;
+}

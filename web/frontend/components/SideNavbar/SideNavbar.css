@@ -1,0 +1,50 @@
+.SideNavbar-brand-image {
+    padding-bottom: 2rem;
+}
+.SideNavbar-brand-image a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.SideNavbar-links-list-os {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.SideNavbar-links-list-os li {
+    padding-bottom: 1rem;
+}
+.SideNavbar-links-list-os li a, .SideNavbar-logout-os a {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 21px;
+    color: #2F3039;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 1rem;
+}
+.SideNavbar-links-list-os li a span, .SideNavbar-logout-os a span {
+    display: flex;
+    min-width: 35px;
+}
+.SideNavbar-links-list-os li a span svg, .SideNavbar-logout-os a span svg {
+    width: 24px;
+}
+.SideNavbar-links-list-os li a.active, .SideNavbar-logout-os a.active {
+    background: #FFF6DE;
+    border-radius: 4px;
+    color: #532E16;
+}
+.SideNavbar-row-os {
+    padding: 1rem 0 1rem 1rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.SideNavbar-section-os {
+    height: 100%;
+}

@@ -1,0 +1,10 @@
+.LiveEventsOnline-row-os {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem 2.6%;
+    padding-bottom: 2rem;
+}
+.LiveEventsOnline-row-os>div {
+    width: 23%;
+}

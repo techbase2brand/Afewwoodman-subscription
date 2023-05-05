@@ -1,0 +1,101 @@
+.OrderStatus-heading-row-os {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1.5rem 2rem 1rem;
+}
+.OrderStatus-heading-col-1-os {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20.7188px;
+    line-height: 21px;
+    color: #3D4857;
+}
+.OrderStatus-add-btn-os span, .OrderStatus-delete-btn-os span {
+    display: flex;
+}
+.OrderStatus-add-btn-os {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15.11px;
+    line-height: 18px;
+    color: #FFFFFF;
+    background: #8E4B0C;
+    border-radius: 2.53731px;
+    border: none;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+}
+.OrderStatus-heading-col-2-os {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.OrderStatus-delete-btn-os {
+    border: 0.634328px solid #000000;
+    border-radius: 2.53731px;
+    background: #fff;
+    padding: 6px 8px;
+    cursor: pointer;
+}
+.OrderStatus-section-os {
+    background: #FFFFFF;
+    border: 1.15104px solid #EBEBEB;
+    border-radius: 9.20833px;
+    margin-bottom: 2.5rem;
+}
+.OrderPagination-row-os {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background: #FAFAFA;
+}
+.OrderPagination-row-os button {
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFFFFF;
+    box-shadow: 0px 3.40476px 3.40476px rgba(0, 0, 0, 0.05);
+    border-radius: 36.6012px;
+}
+.OrderPagination-row-os button span {
+    display: flex;
+    height: 12px;
+    width: 12px;
+    border-left: 2px solid #8E4B0C;
+    border-top: 2px solid #8E4B0C;
+}
+.OrderPagination-prevBtn-os {
+    transform: rotate(-45deg);
+}
+.OrderPagination-nextBtn-os {
+    transform: rotate(135deg);
+}
+.OrderPagination-col-2-os {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.OrderPagination-col-1-os {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16.1146px;
+    line-height: 18px;
+    color: #919191;
+}
+.fl-table thead th.OrderTable-status-heading-os {
+    /* text-align: right; */
+}
