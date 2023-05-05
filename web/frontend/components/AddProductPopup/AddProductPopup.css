@@ -1,0 +1,138 @@
+/* Checkbox style starts */
+.AddProductPopup-checkbox-os {
+    display: block;
+    position: relative;
+    -webkit-user-select: none;
+    user-select: none;
+    padding-left: 2rem;
+  }
+  
+  .AddProductPopup-checkbox-os input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .AddProductPopup-checkbox-os .checkmark {
+    position: absolute;
+    top: -8px;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    border: 1px solid #333333;
+    border-radius: 2px;
+    background-color: transparent;
+  }
+  
+  .AddProductPopup-checkbox-os .checkmark:after {
+    left: 6px;
+    top: 1px;
+    width: 3px;
+    height: 10px;
+    border: solid #6019eb;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+  
+  .AddProductPopup-checkbox-os .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .AddProductPopup-checkbox-os input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  .AddProductPopup-checkbox-os input:checked ~ .checkmark {
+    background-color: transparent;
+    border: 1px solid #6019eb;
+    border-radius: 2px;
+  }
+/* Checkbox style starts */
+
+  .AddProductPopup-heading-row-os h3 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26.7979px;
+    line-height: 40px;
+    color: #000000;
+}
+.AddProductPopup-search-os span {
+    display: flex;
+}
+.AddProductPopup-search-os {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    background: #FFFFFF;
+    border: 2px solid #8E4B0C;
+    border-radius: 11px;
+    padding: 1rem;
+}
+.AddProductPopup-search-os input {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000;
+    border: none;
+    padding: 0 12px;
+    width: 100%;
+    background: transparent;
+}
+.AddProductPopup-cross-btn-os span:last-child {
+    transform: rotate(-45deg) translateY(-2px);
+}
+.AddProductPopup-cross-btn-os span:first-child {
+    transform: rotate(45deg) translateY(2px);
+}
+.AddProductPopup-cross-btn-os span {
+    display: flex;
+    width: 30px;
+    height: 3px;
+    background: #5C5F62;
+}
+.AddProductPopup-heading-row-os {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 1rem;
+}
+.AddProductPopup-cross-btn-os {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 30px;
+    justify-content: center;
+    cursor: pointer;
+}
+.AddProductPopup-product-os {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-top: 1px solid #B1B1B1;
+    border-bottom: 1px solid #B1B1B1;
+    padding: 1rem 1.5rem;
+    margin-top: 1.5rem;
+}
+.multiple-filters-checkbox-col-1-os {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.AddProductPopup-product-name-os {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 21px;
+    color: #532E16;
+}

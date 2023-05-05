@@ -20,7 +20,7 @@ const LiveEvents = () => {
             </div>
             <div className="LiveEvents-online-offile-data-row-os">
                 {activeLiveEvent === "online-event-os" && <LiveEventsOnline />}
-                {/* {activeLiveEvent === "offline-event-os" && <LiveEventsOffline />} */}
+                {activeLiveEvent === "offline-event-os" && <LiveEventsOffline />}
             </div>
         </div>
     )

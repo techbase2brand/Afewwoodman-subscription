@@ -42,7 +42,7 @@ input[type="number"]::-webkit-outer-spin-button {
     }
     
 }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1028px) {
     .app-left-navbar-os {
         width: 25%;
     }
