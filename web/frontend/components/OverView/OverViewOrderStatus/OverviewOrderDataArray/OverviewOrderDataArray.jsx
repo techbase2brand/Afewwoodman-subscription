@@ -1,4 +1,4 @@
-const OrderDataArray = [
+const OverviewOrderDataArray = [
     {
         id : 1,
         invoice : '50014',
@@ -190,4 +190,4 @@ const OrderDataArray = [
     }
 ]
 
-export default OrderDataArray;
+export default OverviewOrderDataArray;

@@ -1,16 +1,17 @@
 import React, { useState, useEffect } from 'react';
-import './OrderStatus.css';
+import './OverviewOrderStatus.css';
 // import axios from 'axios';
 // import 'bootstrap/dist/css/bootstrap.min.css';
-import OrderTable from './OrderTable/OrderTable';
-import OrderPagination from './OrderPagination/OrderPagination';
-import OrderDataArray from './OrderDataArray/OrderDataArray';
+import OverviewOrderDataArray from './OverviewOrderDataArray/OverviewOrderDataArray'
+import OverviewOrderTable from './OverviewOrderTable/OverviewOrderTable';
+import OverviewOrderPagination from './OverviewOrderPagination/OverviewOrderPagination';
 
 // Images
 import addIcon from '../../Assets/order-add-icon.svg'
 import deleteIcon from '../../Assets/order-delete-icon.svg'
 
-const OrderStatus = () => {
+
+const OverviewOverviewOrderStatus = () => {
     // State for data fetched from the API
     const [data, setData] = useState([]);
     // State for pagination
@@ -26,7 +27,7 @@ const OrderStatus = () => {
         //     setData(result.data);
         // };
         // fetchData();
-        setData(OrderDataArray);
+        setData(OverviewOrderDataArray);
         // console.log("table data", OrderDataArray)
     }, []);
 
@@ -40,22 +41,22 @@ const OrderStatus = () => {
 
 
     return (
-        <section className='OrderStatus-section-os'>
-            <div className="OrderStatus-heading-row-os">
-                <div className='OrderStatus-heading-col-1-os'>Order Status</div>
-                <div className='OrderStatus-heading-col-2-os'>
-                    <button onClick={()=> {alert('Add element')}} className='OrderStatus-add-btn-os'>
+        <section className='OverviewOrderStatus-section-os'>
+            <div className="OverviewOrderStatus-heading-row-os">
+                <div className='OverviewOrderStatus-heading-col-1-os'>Order Status</div>
+                <div className='OverviewOrderStatus-heading-col-2-os'>
+                    <button onClick={() => { alert('Add element') }} className='OverviewOrderStatus-add-btn-os'>
                         <span><img src={addIcon} alt="" /></span>
                         Add
                     </button>
-                    <button onClick={()=> {alert('Delete element')}} className='OrderStatus-delete-btn-os'>
-                    <span><img src={deleteIcon} alt="" /></span>
+                    <button onClick={() => { alert('Delete element') }} className='OverviewOrderStatus-delete-btn-os'>
+                        <span><img src={deleteIcon} alt="" /></span>
                     </button>
                 </div>
             </div>
-            
-            <OrderTable data={currentItems} />
-            <OrderPagination
+
+            <OverviewOrderTable data={currentItems} />
+            <OverviewOrderPagination
                 itemsPerPage={itemsPerPage}
                 totalItems={data.length}
                 paginate={paginate}
@@ -66,4 +67,4 @@ const OrderStatus = () => {
     )
 }
 
-export default OrderStatus
+export default OverviewOverviewOrderStatus

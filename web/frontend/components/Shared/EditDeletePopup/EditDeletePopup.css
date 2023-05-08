@@ -1,0 +1,27 @@
+.EditDeletePopup-row-os button {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: #585858;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.EditDeletePopup-edit-btn-os {
+    border-bottom: 1.15104px solid #F7F7F7 !important;
+}
+
+.EditDeletePopup-row-os {
+    padding: 0 8px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.12);
+    border-radius: 6px;
+}

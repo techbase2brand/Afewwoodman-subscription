@@ -22,6 +22,7 @@ import Occassions from "../components/Occassions/Occassions";
 import FathersDay from "../components/FathersDay/FathersDay";
 import LiveEvents from "../components/LiveEvents/LiveEvents";
 import Stylists from "../components/Stylists/Stylists";
+import OrderStatus from "../components/OrderStatus/OrderStatus";
 
 export default function HomePage() {
   return (
@@ -40,6 +41,7 @@ export default function HomePage() {
                 <Route path="/fathersday" element={<FathersDay />} />
                 <Route path="/liveevents" element={<LiveEvents />} />
                 <Route path="/stylists" element={<Stylists />} />
+                <Route path="/orderstatus" element={<OrderStatus />} />
               </Routes>
             {/* </BrowserRouter> */}
           </div>

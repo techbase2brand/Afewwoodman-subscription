@@ -19,19 +19,20 @@
     position: absolute;
     top: -8px;
     left: 0;
-    height: 18px;
-    width: 18px;
-    border: 1px solid #333333;
-    border-radius: 2px;
+    height: 24px;
+    width: 24px;
+    border: 1px solid #A4A4A4;
+    border-radius: 5px;
     background-color: transparent;
+    cursor: pointer;
   }
   
   .AddProductPopup-checkbox-os .checkmark:after {
-    left: 6px;
+    left: 7px;
     top: 1px;
-    width: 3px;
-    height: 10px;
-    border: solid #6019eb;
+    width: 6px;
+    height: 14px;
+    border: solid #000;
     border-width: 0 2px 2px 0;
     transform: rotate(45deg);
   }
@@ -48,8 +49,8 @@
   
   .AddProductPopup-checkbox-os input:checked ~ .checkmark {
     background-color: transparent;
-    border: 1px solid #6019eb;
-    border-radius: 2px;
+    border: 1px solid #A4A4A4;
+    border-radius: 5px;
   }
 /* Checkbox style starts */
 
@@ -72,6 +73,7 @@
     border: 2px solid #8E4B0C;
     border-radius: 11px;
     padding: 1rem;
+    margin: 1.5rem;
 }
 .AddProductPopup-search-os input {
     font-family: 'Poppins';
@@ -98,11 +100,14 @@
     background: #5C5F62;
 }
 .AddProductPopup-heading-row-os {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 1.5rem;
+  border-bottom: 1px solid #B1B1B1;
+  background: #fff;
+  border-radius: 11px 11px 0 0;
 }
 .AddProductPopup-cross-btn-os {
     display: flex;
@@ -113,20 +118,27 @@
     cursor: pointer;
 }
 .AddProductPopup-product-os {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    border-top: 1px solid #B1B1B1;
-    border-bottom: 1px solid #B1B1B1;
-    padding: 1rem 1.5rem;
-    margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border-top: 1px solid #B1B1B1;
+  /* border-bottom: 1px solid #B1B1B1; */
+  padding: 1rem 1.5rem;
+  /* margin-bottom: 1rem; */
 }
 .multiple-filters-checkbox-col-1-os {
     display: flex;
     align-items: center;
     gap: 2rem;
     flex-wrap: wrap;
+    width: 50%;
+}
+.AddProductPopup-product-image-os {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .AddProductPopup-product-name-os {
     font-family: 'Inter';
@@ -135,4 +147,84 @@
     font-size: 17px;
     line-height: 21px;
     color: #532E16;
+}
+.AddProductPopup-section-os {
+}
+.AddProductPopup-main-os {
+  max-width: 1028px;
+  width: 100%;
+  height: auto;
+  position: relative;
+  background: #fff;
+  border-radius: 11px;
+}
+.AddProductPopup-product-row-os {
+  max-height: 460px;
+  overflow-y: scroll;
+  background: #fff;
+  position: relative;
+}
+.AddProductPopup-product-row-os::-webkit-scrollbar-thumb {
+  background-color: #898989;
+}
+.AddProductPopup-product-row-os::-webkit-scrollbar {
+  width: 4px;
+  background-color: #fff;
+}
+.AddProductPopup-product-row-os::-webkit-scrollbar-track {
+  -webkit-box-shadow: none;
+  background-color: #fff;
+}
+.AddProductPopup-selected-btn-row-os {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1.5rem;
+  background: #EAEAEA;
+  border-radius: 0 0 11px 11px;
+}
+.AddProductPopup-selected-products-os {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20.6914px;
+  line-height: 25px;
+  color: #532E16;
+}
+.AddProductPopup-product-cancel-add-btn-os button {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  padding: 12px 1.5rem;
+  cursor: pointer;
+}
+.AddProductPopup-product-cancel-btn-os {
+  border: 1px solid #3C3C3C;
+  border-radius: 3px;
+  color: #000;
+}
+.AddProductPopup-product-cancel-add-btn-os button:hover {
+  opacity: 0.8;
+}
+.AddProductPopup-product-add-btn-os {
+  background: #0B0B0B;
+  border: 1px solid #3C3C3C;
+  border-radius: 3px;
+  color: #fff;
+}
+.AddProductPopup-product-cancel-add-btn-os {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+@media screen and (max-width:1199px) {
+  .AddProductPopup-main-os {
+    max-width: 90%;
+    margin: 0 auto;
+  }  
 }

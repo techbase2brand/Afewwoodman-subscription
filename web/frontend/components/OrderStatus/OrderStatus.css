@@ -1,0 +1,56 @@
+.OrderStatus-page-os {
+    background: #fff;
+    border-radius: 11px;
+    border: 1.15104px solid #EBEBEB;
+    padding-bottom: 2rem;
+}
+.OrderStatus-heading-row-os {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+.OrderStatus-heading-row-os h2 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20.7188px;
+    line-height: 21px;
+    color: #3D4857;
+}
+.OrderStatus-add-btn-os span {
+    display: flex;
+}
+.OrderStatus-add-btn-os span svg path {
+    fill: #8E4B0C;
+}
+.OrderStatus-add-btn-os {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15.11px;
+    line-height: 18px;
+    color: #8E4B0C;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid #8E4B0C;
+    border-radius: 2.53731px;
+    padding: 8px 12px;
+    background: #fff;
+    cursor: pointer;
+}
+
+/*  */
+.popup-dot-os {
+    position: relative;
+    width: 100%;
+}
+.popup-dot-os .EditDeletePopup-section-os {
+    position: absolute;
+    width: 180px;
+    right: 30px;
+    top: 30px;
+    z-index: 2;
+}

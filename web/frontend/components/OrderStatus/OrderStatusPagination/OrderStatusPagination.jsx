@@ -1,6 +1,6 @@
-import React from 'react';
+import React from 'react'
 
-const OrderPagination = ({ itemsPerPage, totalItems, paginate, currentPage, maxPageNumber }) => {
+const OrderStatusPagination = ({ itemsPerPage, totalItems, paginate, currentPage, maxPageNumber }) => {
     // const pageNumbers = [];
     // for (let i = 1; i <= Math.ceil(totalItems / itemsPerPage); i++) {
     //     pageNumbers.push(i);
@@ -52,4 +52,4 @@ const OrderPagination = ({ itemsPerPage, totalItems, paginate, currentPage, maxP
     )
 }
 
-export default OrderPagination
+export default OrderStatusPagination

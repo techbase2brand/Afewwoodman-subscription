@@ -1,10 +1,10 @@
 import React from 'react';
-import './OrderTable.css';
+import './OverviewOrderTable.css';
 
-const OrderTable = ({ data }) => {
-    console.log("data", data)
+const OverviewOrderTable = ({ data }) => {
+    // console.log("data", data)
     return (
-        <section className='OrderTable-section-os'>
+        <section className='OverviewOrderTable-section-os'>
             <div className='table-wrapper'>
                 <table className="fl-table">
                     <thead>
@@ -14,7 +14,7 @@ const OrderTable = ({ data }) => {
                             <th>Ship</th>
                             <th>Best Price</th>
                             <th>Purchased Price</th>
-                            <th className='OrderTable-status-heading-os'>Status</th>
+                            <th className='OverviewOrderTable-status-heading-os'>Status</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -27,7 +27,7 @@ const OrderTable = ({ data }) => {
                                     <td>{item.bestPrice}</td>
                                     <td>{item.purchasedPrice}</td>
                                     <td>
-                                        <div className={`OrderTable-status-data-os ${item.status === 'Open' ? 'Open' : item.status === 'Progress' ? 'Progress' : item.status === 'On Hold' ? 'On Hold' : null}`}
+                                        <div className={`OverviewOrderTable-status-data-os ${item.status === 'Open' ? 'Open' : item.status === 'Progress' ? 'Progress' : item.status === 'On Hold' ? 'On Hold' : null}`}
                                         >
                                             {item.status === 'Open' ? 'Open' : item.status === 'Progress' ? 'Progress' : item.status === 'On Hold' ? 'On Hold' : null}
                                         </div>
@@ -42,4 +42,4 @@ const OrderTable = ({ data }) => {
     )
 }
 
-export default OrderTable
+export default OverviewOrderTable

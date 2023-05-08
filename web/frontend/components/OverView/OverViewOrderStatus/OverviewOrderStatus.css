@@ -1,11 +1,11 @@
-.OrderStatus-heading-row-os {
+.OverviewOrderStatus-heading-row-os {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 1.5rem 2rem 1rem;
 }
-.OrderStatus-heading-col-1-os {
+.OverviewOrderStatus-heading-col-1-os {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 600;
@@ -13,10 +13,10 @@
     line-height: 21px;
     color: #3D4857;
 }
-.OrderStatus-add-btn-os span, .OrderStatus-delete-btn-os span {
+.OverviewOrderStatus-add-btn-os span, .OverviewOrderStatus-delete-btn-os span {
     display: flex;
 }
-.OrderStatus-add-btn-os {
+.OverviewOrderStatus-add-btn-os {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
@@ -32,19 +32,19 @@
     gap: 4px;
     cursor: pointer;
 }
-.OrderStatus-heading-col-2-os {
+.OverviewOrderStatus-heading-col-2-os {
     display: flex;
     align-items: center;
     gap: 8px;
 }
-.OrderStatus-delete-btn-os {
+.OverviewOrderStatus-delete-btn-os {
     border: 0.634328px solid #000000;
     border-radius: 2.53731px;
     background: #fff;
     padding: 6px 8px;
     cursor: pointer;
 }
-.OrderStatus-section-os {
+.OverviewOrderStatus-section-os {
     background: #FFFFFF;
     border: 1.15104px solid #EBEBEB;
     border-radius: 9.20833px;

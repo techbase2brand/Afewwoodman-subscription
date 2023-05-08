@@ -1,14 +1,22 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './AddProductPopup.css';
-import productImg from '../Assets/fathersDay-img1.png';
+// import productImg from '../Assets/fathersDay-img1.png';
+import AddProductsDataArray from './AddProductsDataArray/AddProductsDataArray';
 
-const AddProductPopup = () => {
+const AddProductPopup = ({setActiveAddProductPopup}) => {
+    const [arrayData, setArrayData] = useState()
+    useEffect(() => {
+        setArrayData(AddProductsDataArray)
+    }, [])
+
     return (
-        <section className='AddProductPopup-section-os'>
+        <section className='AddProductPopup-section-os AddOccassionsPopup-section-os'>
             <div className="AddProductPopup-main-os">
                 <div className="AddProductPopup-heading-row-os">
                     <h3>Add Product</h3>
-                    <div className="AddProductPopup-cross-btn-os">
+                    <div 
+                    onClick={()=> {setActiveAddProductPopup(false)}}
+                     className="AddProductPopup-cross-btn-os">
                         <span></span>
                         <span></span>
                     </div>
@@ -21,22 +29,39 @@ const AddProductPopup = () => {
                     </span>
                     <input type="search" placeholder='Search Product' />
                 </div>
-                <div className="AddProductPopup-product-os">
-                    <div className="multiple-filters-checkbox-col-1-os">
-                        <div className="">
-                            <label className="AddProductPopup-checkbox-os">
-                                <input type="checkbox" />
-                                <span className="checkmark"></span>
-                            </label>
-                        </div>
-                        <div className="AddProductPopup-product-image-os">
-                            <img src={productImg} alt="" />
-                        </div>
-                        <div className="AddProductPopup-product-name-os">The Chadwick</div>
-                    </div>
-                    <div className="multiple-filters-checkbox-col-2-os">$123.00</div>
+
+                <div className="AddProductPopup-product-row-os">
+                    {AddProductsDataArray?.map((item, index) => {
+                        return (
+                            <div className="AddProductPopup-product-os" key={index}>
+                                <div className="multiple-filters-checkbox-col-1-os">
+                                    <div className="AddProductPopup-checkbox-os">
+                                        <label className="">
+                                            <input type="checkbox" />
+                                            <span className="checkmark"></span>
+                                        </label>
+                                    </div>
+                                    <div className="AddProductPopup-product-image-os">
+                                        <img src={item.productImage} alt="" />
+                                    </div>
+                                    <div className="AddProductPopup-product-name-os">{item.productName}</div>
+                                </div>
+                                <div className="multiple-filters-checkbox-col-2-os">{item.price}</div>
+                            </div>
+                        )
+                    })
+                    }
                 </div>
 
+                <div className="AddProductPopup-selected-btn-row-os">
+                    <div className="AddProductPopup-selected-products-os">
+                        0/{arrayData ? arrayData.length  : 0} products selected 
+                    </div>
+                    <div className="AddProductPopup-product-cancel-add-btn-os">
+                        <button className="AddProductPopup-product-cancel-btn-os">Cancel</button>
+                        <button className="AddProductPopup-product-add-btn-os">Add</button>
+                    </div>
+                </div>
             </div>
         </section>
     )

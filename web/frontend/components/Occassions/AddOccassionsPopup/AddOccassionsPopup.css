@@ -36,12 +36,12 @@
     font-family: 'Inter';
     font-style: normal;
     font-weight: 600;
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 16px;
+    line-height: 20px;
     color: #2F3039;
     border: 1px solid #2F3039;
     border-radius: 11px;
-    padding: 0.8rem 1rem;
+    padding: 1rem;
     width: 100%;
 }
 .AddOccassionsPopup-input-os label {

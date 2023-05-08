@@ -1,11 +1,11 @@
 /* Table Style starts */
 
-.OrderTable-section-os .table-wrapper {
+.OverviewOrderTable-section-os .table-wrapper {
     /* padding-top: 2rem; */
     /* box-shadow: 0px 35px 50px rgba(0, 0, 0, 0.2); */
 }
 
-.OrderTable-section-os .fl-table {
+.OverviewOrderTable-section-os .fl-table {
     border-radius: 5px;
     font-size: 12px;
     font-weight: normal;
@@ -17,12 +17,12 @@
     background-color: white;
 }
 
-.OrderTable-section-os .fl-table td, .fl-table th {
+.OverviewOrderTable-section-os .fl-table td, .fl-table th {
     text-align: center;
     padding: 1.5rem 2rem;
 }
 
-.OrderTable-section-os .fl-table td {
+.OverviewOrderTable-section-os .fl-table td {
     border-bottom: 1px solid #f8f8f8;
     font-family: 'Inter';
     font-style: normal;
@@ -32,7 +32,7 @@
     color: #585858;
 }
 
-.OrderTable-section-os .fl-table thead th {
+.OverviewOrderTable-section-os .fl-table thead th {
     background: #FAFAFA;
     font-family: 'Inter';
     font-style: normal;
@@ -42,21 +42,21 @@
     color: #585858;
 }
 
-.OrderTable-section-os .fl-table thead th:nth-child(odd) {
+.OverviewOrderTable-section-os .fl-table thead th:nth-child(odd) {
     /* color: #ffffff;
     background: #324960; */
 }
 
-.OrderTable-section-os .fl-table tr:nth-child(even) {
+.OverviewOrderTable-section-os .fl-table tr:nth-child(even) {
     /* background: #f8f8f8; */
 }
-.OrderTable-section-os .fl-table tr:last-child td {
+.OverviewOrderTable-section-os .fl-table tr:last-child td {
     border: none;
 }
 
 /* Table Style ends */
 
-.OrderTable-status-data-os.Open {
+.OverviewOrderTable-status-data-os.Open {
     font-size: 15.11px;
     line-height: 18px;
     color: #FFFFFF;
@@ -64,7 +64,7 @@
     border-radius: 5px;
     padding: 8px;
 }
-.OrderTable-status-data-os.Progress {
+.OverviewOrderTable-status-data-os.Progress {
     font-size: 15.11px;
     line-height: 18px;
     color: #FFFFFF;
@@ -72,7 +72,7 @@
     border-radius: 5px;
     padding: 8px;
 }
-.OrderTable-status-data-os.On.Hold {
+.OverviewOrderTable-status-data-os.On.Hold {
     font-size: 15.11px;
     line-height: 18px;
     color: #FFFFFF;
@@ -80,7 +80,7 @@
     border-radius: 5px;
     padding: 8px;
 }
-.OrderTable-status-data-os {
+.OverviewOrderTable-status-data-os {
     max-width: 120px;
     width: 100%;
     margin: 0 auto;
@@ -89,11 +89,11 @@
 /* Responsive */
 
 @media (max-width: 767px) {
-    .OrderTable-section-os .fl-table {
+    .OverviewOrderTable-section-os .fl-table {
         display: block;
         width: 100%;
     }
-    .OrderTable-section-os .table-wrapper:before {
+    .OverviewOrderTable-section-os .table-wrapper:before {
         content: "Scroll horizontally >";
         display: block;
         text-align: right;
@@ -101,24 +101,24 @@
         color: white;
         padding: 0 0 10px;
     }
-    .OrderTable-section-os .fl-table thead,
-    .OrderTable-section-os .fl-table tbody,
-    .OrderTable-section-os .fl-table thead th {
+    .OverviewOrderTable-section-os .fl-table thead,
+    .OverviewOrderTable-section-os .fl-table tbody,
+    .OverviewOrderTable-section-os .fl-table thead th {
         display: block;
     }
-    .OrderTable-section-os .fl-table thead th:last-child {
+    .OverviewOrderTable-section-os .fl-table thead th:last-child {
         border-bottom: none;
     }
-    .OrderTable-section-os .fl-table thead {
+    .OverviewOrderTable-section-os .fl-table thead {
         float: left;
     }
-    .OrderTable-section-os .fl-table tbody {
+    .OverviewOrderTable-section-os .fl-table tbody {
         width: auto;
         position: relative;
         overflow-x: auto;
     }
-    .OrderTable-section-os .fl-table td,
-    .OrderTable-section-os .fl-table th {
+    .OverviewOrderTable-section-os .fl-table td,
+    .OverviewOrderTable-section-os .fl-table th {
         padding: 20px 0.625em 0.625em 0.625em;
         height: 60px;
         vertical-align: middle;
@@ -129,27 +129,27 @@
         font-size: 13px;
         text-overflow: ellipsis;
     }
-    .OrderTable-section-os .fl-table thead th {
+    .OverviewOrderTable-section-os .fl-table thead th {
         text-align: left;
         border-bottom: 1px solid #f7f7f9;
     }
-    .OrderTable-section-os .fl-table tbody tr {
+    .OverviewOrderTable-section-os .fl-table tbody tr {
         display: table-cell;
     }
-    .OrderTable-section-os .fl-table tbody tr:nth-child(odd) {
+    .OverviewOrderTable-section-os .fl-table tbody tr:nth-child(odd) {
         background: none;
     }
-    .OrderTable-section-os .fl-table tr:nth-child(even) {
+    .OverviewOrderTable-section-os .fl-table tr:nth-child(even) {
         /* background: transparent; */
     }
-    .OrderTable-section-os .fl-table tr td:nth-child(odd) {
+    .OverviewOrderTable-section-os .fl-table tr td:nth-child(odd) {
         background: #f8f8f8;
         border-right: 1px solid #e6e4e4;
     }
-    .OrderTable-section-os .fl-table tr td:nth-child(even) {
+    .OverviewOrderTable-section-os .fl-table tr td:nth-child(even) {
         border-right: 1px solid #e6e4e4;
     }
-    .OrderTable-section-os .fl-table tbody td {
+    .OverviewOrderTable-section-os .fl-table tbody td {
         display: block;
         text-align: center;
     }
