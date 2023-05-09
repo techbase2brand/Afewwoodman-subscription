@@ -1,22 +1,22 @@
 import React, { useState } from 'react';
 import '../OrderStatus.css';
-// import EditDeletePopup from '../../Shared/EditDeletePopup/EditDeletePopup';
-// import OutsideClickHandler from "react-outside-click-handler";
+import EditDeletePopup from '../../Shared/EditDeletePopup/EditDeletePopup';
+import OutsideClickHandler from "react-outside-click-handler";
 
 
 const OrderStatusTable = ({ data }) => {
-    // const [activePopupId, setActivePopupId] = useState(null);
+    const [activePopupId, setActivePopupId] = useState(false);
 
-
-    // const togglePopup = (id) => {
-    //     if (activePopupId === id) {
-    //         setActivePopupId(null);
-    //         console.log("hide popup");
-    //     } else {
-    //         setActivePopupId(id);
-    //         console.log("show popup");
-    //     }
-    // };
+    const togglePopup = (id) => {
+        if (activePopupId === id) {
+            setActivePopupId(false);
+            console.log("hide popup");
+        } else {
+            setActivePopupId(id);
+            console.log("show popup");
+        }
+        // setActivePopupId(prevId => prevId === id ? false : id);
+    };
 
 
     return (
@@ -44,22 +44,29 @@ const OrderStatusTable = ({ data }) => {
                                 <td>{item.price}</td>
                                 <td>{item.quantity}</td>
                                 <td>
-                                    {/* <OutsideClickHandler
+                                    <OutsideClickHandler
                                         onOutsideClick={() => {
-                                            setActivePopupId(null);
+                                            if (activePopupId === item.id) {
+                                                setActivePopupId(false)
+                                            }
                                         }}
-                                    > */}
-                                    <div className="popup-dot-os">
-                                        <div
-                                            // onClick={() => togglePopup(item.id)}
-                                            className="ProductsTable-dots-os">
-                                            <span></span>
-                                            <span></span>
-                                            <span></span>
+                                    >
+                                        <div className="popup-dot-os">
+                                            <div
+                                                onClick={() => {
+                                                    // togglePopup(item.id)
+                                                    alert('Event fired')
+                                                }}
+                                                className="ProductsTable-dots-os">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                            {activePopupId === item.id &&
+                                                <EditDeletePopup />
+                                            }
                                         </div>
-                                        {/* {activePopupId === item.id && <EditDeletePopup />} */}
-                                    </div>
-                                    {/* </OutsideClickHandler> */}
+                                    </OutsideClickHandler>
                                 </td>
                             </tr>
                         ))}

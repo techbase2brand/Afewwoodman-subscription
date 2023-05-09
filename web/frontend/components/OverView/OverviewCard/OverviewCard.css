@@ -20,7 +20,7 @@
     padding: 2rem;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: 100% 100%;
     min-height: 180px;
 }
 .OverviewCard-col-1-os {

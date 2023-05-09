@@ -9,7 +9,7 @@ const Products = () => {
     const [data, setData] = useState([]);
     // State for pagination
     const [currentPage, setCurrentPage] = useState(1);
-    const [itemsPerPage, setItemsPerPage] = useState(8);
+    const [itemsPerPage, setItemsPerPage] = useState(6);
 
 
 

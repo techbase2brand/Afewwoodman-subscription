@@ -1,0 +1,10 @@
+.Stylists-card-row-os {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4rem 4%;
+    padding: 0 4rem 2rem;
+}
+.Stylists-card-row-os>div {
+    width: 30.66%;
+}

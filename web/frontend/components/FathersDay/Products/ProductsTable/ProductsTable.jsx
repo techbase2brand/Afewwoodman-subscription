@@ -1,7 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './ProductsTable.css';
+import OutsideClickHandler from "react-outside-click-handler";
+import EditDeletePopup from '../../../Shared/EditDeletePopup/EditDeletePopup';
 
 const ProductsTable = ({ data }) => {
+    const [activePopupId, setActivePopupId] = useState(false);
+
+    const togglePopup = (id) => {
+        if (activePopupId === id) {
+            setActivePopupId(false);
+            console.log("hide popup");
+        } else {
+            setActivePopupId(id);
+            console.log("show popup");
+        }
+    };
     return (
         <section className='ProductsTable-section-os'>
             <div className='table-wrapper'>
@@ -25,11 +38,29 @@ const ProductsTable = ({ data }) => {
                                 <td>{item.price}</td>
                                 <td>{item.stock}</td>
                                 <td>
-                                    <div onClick={()=> {alert("Event fired")}} className="ProductsTable-dots-os">
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                    </div>
+                                    <OutsideClickHandler
+                                        onOutsideClick={() => {
+                                            if (activePopupId === item.id) {
+                                                setActivePopupId(false)
+                                            }
+                                        }}
+                                    >
+                                        <div className="popup-dot-os">
+                                            <div
+                                                onClick={() => {
+                                                    // togglePopup(item.id)
+                                                    alert('Event fired')
+                                                }}
+                                                className="ProductsTable-dots-os">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                            {activePopupId === item.id &&
+                                                <EditDeletePopup />
+                                            }
+                                        </div>
+                                    </OutsideClickHandler>
                                 </td>
                             </tr>
                         ))}
