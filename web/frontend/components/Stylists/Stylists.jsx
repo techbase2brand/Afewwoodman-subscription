@@ -36,7 +36,7 @@ const Stylists = () => {
             setCheckedArray([...checkedArray, value]);
         }
     }
-    console.log("checked dataArray", checkedArray);
+    // console.log("checked dataArray", checkedArray);
 
 
     return (

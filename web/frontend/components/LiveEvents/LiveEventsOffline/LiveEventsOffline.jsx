@@ -29,15 +29,17 @@ const LiveEventsOffline = () => {
     return (
         <>
             <div className='LiveEventsOnline-row-os'>
-                {currentItems?.map((item) => {
+                {currentItems?.map((item, index) => {
                     return (
-                        <LiveEventsCard
-                            image={item.image}
-                            heading={item.heading}
-                            date={item.date}
-                            time={item.time}
-                            text={item.text}
-                        />
+                        <div key={index} className="">
+                            <LiveEventsCard
+                                image={item.image}
+                                heading={item.heading}
+                                date={item.date}
+                                time={item.time}
+                                text={item.text}
+                            />
+                        </div>
                     )
                 })}
             </div>

@@ -2,6 +2,7 @@ import React from 'react';
 import './OverView.css';
 import OverviewCard from './OverviewCard/OverviewCard';
 import OverviewOverviewOrderStatus from './OverViewOrderStatus/OverviewOrderStatus';
+import OverViewGraph from './OverViewGraph/OverViewGraph';
 
 const OverView = () => {
   return (
@@ -11,6 +12,7 @@ const OverView = () => {
                 <p>Last 30 days</p>
             </div>
             <OverviewCard />
+            <OverViewGraph />
             <OverviewOverviewOrderStatus />
         </div>
     )
