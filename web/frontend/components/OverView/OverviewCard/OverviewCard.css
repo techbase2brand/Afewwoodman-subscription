@@ -38,8 +38,26 @@
 .OverviewCard-row-os {
     display: flex;
     flex-wrap: wrap;
-    gap: 4%;
+    gap: 2rem 4%;
 }
 .OverviewCard-section-os {
     padding-bottom: 2.5rem;
+}
+
+@media screen and (max-width:1199px) {
+    .OverviewCard-col-os {
+        width: 30.6%;
+    }    
+}
+
+@media screen and (max-width:991px) {
+    .OverviewCard-col-os {
+        width: 48%;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .OverviewCard-col-os {
+        width: 100%;
+    }
 }

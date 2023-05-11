@@ -1,49 +1,72 @@
 import React from 'react';
+import './OverViewGraph.css';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, AreaChart, Area, BarChart, Bar } from 'recharts';
 const pdata = [
   {
-    name: 'Python',
-    student: 13,
-    fees: 10
+    name: '$0k',
+    student: 60000,
+    fees: 40000
   },
   {
-    name: 'Javascript',
-    student: 15,
-    fees: 12
+    name: '$100k',
+    student:50000,
+    fees: 35000
   },
   {
-    name: 'PHP',
-    student: 5,
-    fees: 10
+    name: '$200k',
+    student: 60000,
+    fees: 40000
   },
   {
-    name: 'Java',
-    student: 10,
-    fees: 5
+    name: '$350k',
+    student: 95000,
+    fees: 50000
   },
   {
-    name: 'C#',
-    student: 9,
-    fees: 4
+    name: '$500k',
+    student: 80000,
+    fees: 40000
   },
   {
-    name: 'C++',
-    student: 10,
-    fees: 8
+    name: '$600k',
+    student: 70000,
+    fees: 50000
   },
+  {
+    name: '$800k',
+    student: 60000,
+    fees: 40000
+  },
+  {
+    name: '$900k',
+    student: 70000,
+    fees: 50000
+  },
+  {
+    name: '$1000k',
+    student: 70000,
+    fees: 50000
+  },
+  {
+    name: '$600k',
+    student: 80000,
+    fees: 60000
+  }
 ];
 
 const OverViewGraph = () => {
   return (
-    <>
+    <section className='OverViewGraph-section-os'>
       <h1 className="chart-heading">Line Chart</h1>
       <ResponsiveContainer width="100%" aspect={3}>
-        <LineChart data={pdata} width={500} height={300} margin={{ top: 5, right: 300, left: 20, bottom: 5 }}>
+        <LineChart data={pdata} width={500} height={300} margin={{ top: 5, right: 10, left: 20, bottom: 5 }}>
           <CartesianGrid strokeDasharray="3 3" />
-          <XAxis dataKey="name" interval={'preserveStartEnd'} tickFormatter={(value) => value + " Programming"} />
+          <XAxis dataKey="name" interval={'preserveStartEnd'} tickFormatter={(value) => value 
+            // + " Programming"
+            } />
           <YAxis />
           <Tooltip contentStyle={{ backgroundColor: 'yellow' }} />
-          <Legend />
+          {/* <Legend /> */}
           <Line type="monotone" dataKey="student" stroke="red" activeDot={{ r: 8 }} />
           <Line type="monotone" dataKey="fees" stroke="green" activeDot={{ r: 8 }} />
         </LineChart>
@@ -93,7 +116,7 @@ const OverViewGraph = () => {
           <Bar dataKey="fees" fill="#82ca9d" />
         </BarChart>
       </ResponsiveContainer> */}
-    </>
+    </section>
   );
 }
 export default OverViewGraph

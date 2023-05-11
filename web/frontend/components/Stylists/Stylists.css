@@ -8,3 +8,23 @@
 .Stylists-card-row-os>div {
     width: 30.66%;
 }
+
+@media screen and (max-width:1199px) {
+    .Stylists-card-row-os>div {
+        width: 48%;
+    }
+    .Stylists-card-row-os {
+        gap: 2rem 4%;
+        padding: 0 2rem 2rem;
+    }  
+}
+@media screen and (max-width:991px) {
+    .Stylists-card-row-os {
+        padding: 0 0rem 2rem;
+    }
+}
+@media screen and (max-width:767px) {
+    .Stylists-card-row-os>div {
+        width: 100%;
+    }
+}

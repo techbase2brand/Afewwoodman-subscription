@@ -26,6 +26,7 @@
     background: rgba(236, 209, 136, 0.21);
     border-radius: 6px;
     justify-content: center;
+    word-break: break-all;
 }
 /* Checkbox style starts */
 .StylistsCard-checkbox-os {
@@ -82,3 +83,9 @@
     background-color: #ECF0F3;
   }
 /* Checkbox style starts */
+
+@media screen and (max-width:991px) {
+  .StylistsCard-col-os {
+    padding: 1rem;
+  }
+}

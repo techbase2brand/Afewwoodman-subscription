@@ -7,8 +7,9 @@ import StylistsPagination from './StylistsPagination/StylistsPagination';
 import AddLinkPopup from '../Shared/AddLinkPopup/AddLinkPopup';
 
 const Stylists = () => {
-    const [activeAddLinkPopup, setActiveAddEventPopup] = useState(false);
     const [checkedArray, setCheckedArray] = useState([]);
+    const [activeSelectAll, setActiveSelectAll] = useState(false);
+    const [activeAddLinkPopup, setActiveAddEventPopup] = useState(false);
     // State for data fetched from the API
     const [data, setData] = useState([]);
     // State for pagination
@@ -30,22 +31,36 @@ const Stylists = () => {
     const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
     const handleCheckbox = (value) => {
+        if (activeSelectAll) {
+            setActiveSelectAll(false);
+        }
         if (checkedArray.includes(value)) {
             setCheckedArray(checkedArray.filter(item => item !== value));
         } else {
             setCheckedArray([...checkedArray, value]);
         }
     }
-    // console.log("checked dataArray", checkedArray);
+
+    const handleSelectAll = () => {
+        if (activeSelectAll) {
+            setActiveSelectAll(false);
+            setCheckedArray([]);
+        } else {
+            setActiveSelectAll(true);
+            setCheckedArray(currentItems.map(item => item.id));
+        }
+    }
 
 
     return (
         <div className='Stylists-page-os'>
             <div className="Occassions-heading-os">
-                <Heading heading="Stylists" text="Groups link" buttonText="Add Group Link" onClick={() => {
-                    setActiveAddEventPopup(true)
-                    // alert('Event fired')
-                }}
+                <Heading heading="Stylists" text="Groups link" buttonText="Add Group Link"
+                    onClick={() => {
+                        setActiveAddEventPopup(true)
+                        // alert('Event fired')
+                    }}
+                    selectAllOnClick={() => { handleSelectAll() }}
                     selectAll="Select all" />
             </div>
             <div className="Stylists-card-row-os">
@@ -56,7 +71,7 @@ const Stylists = () => {
                             id={items.id}
                             image={items.image}
                             linkText={items.linkText}
-                            onChange={() => { handleCheckbox(items.id) }}
+                            onChange={() => handleCheckbox(items.id)}
                             checked={checkedArray.includes(items.id)}
                         />
                     )

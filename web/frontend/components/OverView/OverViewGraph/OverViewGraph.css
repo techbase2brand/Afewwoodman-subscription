@@ -1,0 +1,14 @@
+.OverViewGraph-section-os h1 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20.625px;
+    line-height: 24px;
+    color: #8E4B0C;
+    padding-bottom: 1.5rem;
+}
+.OverViewGraph-section-os {
+    background: #fff;
+    padding: 2rem;
+    margin-bottom: 3rem;
+}

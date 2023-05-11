@@ -48,8 +48,8 @@ const ProductsTable = ({ data }) => {
                                         <div className="popup-dot-os">
                                             <div
                                                 onClick={() => {
-                                                    // togglePopup(item.id)
-                                                    alert('Event fired')
+                                                    togglePopup(item.id)
+                                                    // alert('Event fired')
                                                 }}
                                                 className="ProductsTable-dots-os">
                                                 <span></span>
