@@ -39,6 +39,8 @@ const Stylists = () => {
         } else {
             setCheckedArray([...checkedArray, value]);
         }
+
+        // console.log('checkbox', checkedArray)
     }
 
     const handleSelectAll = () => {
@@ -47,8 +49,9 @@ const Stylists = () => {
             setCheckedArray([]);
         } else {
             setActiveSelectAll(true);
-            setCheckedArray(currentItems.map(item => item.id));
+            setCheckedArray(StylistsArray.map(item => item.id));
         }
+        // console.log('selectAll', activeSelectAll);
     }
 
 

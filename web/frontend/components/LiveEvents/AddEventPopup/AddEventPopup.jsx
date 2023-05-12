@@ -53,7 +53,7 @@ const AddEventPopup = ({ setActiveAddEventPopup }) => {
                             <input type="time" />
                         </div>
                         <div className="AddOccassionsPopup-input-os">
-                            <label>Location</label>
+                            <label>Link</label>
                             <input type="text" />
                         </div>
                         <button className="AddOccassionsPopup-submit-btn-os">Submit</button>
@@ -73,7 +73,7 @@ const AddEventPopup = ({ setActiveAddEventPopup }) => {
                             <input type="time" />
                         </div>
                         <div className="AddOccassionsPopup-input-os">
-                            <label>Link</label>
+                            <label>Location</label>
                             <input type="text" />
                         </div>
                         <button className="AddOccassionsPopup-submit-btn-os">Submit</button>
